@@ -1,0 +1,9 @@
+on:
+  pull_request:
+  push:
+
+jobs:
+  test:
+    steps:
+    - uses: actions/checkout@v2.3.5
+    - run: docker build -t temp .
