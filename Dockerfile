@@ -1,4 +1,4 @@
 FROM node:16
 
-COPY ["package.json", "package-lock.json*", "./"]
+COPY ["yarn.lock", "package.json", "package-lock.json*", "./"]
 RUN yarn install
